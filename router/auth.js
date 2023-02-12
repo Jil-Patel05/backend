@@ -5,6 +5,9 @@ const bcrypt = require("bcryptjs");
 const authenticate=require("../authenticate/authenticate.js")
 
 //asnyc-await
+router.get("/", (req, res) => {
+    res.send("hello form me")
+})
 
 router.post("/register", async(req, res) => {
     const { name, email, phone, work, password, cpassword } = req.body;
