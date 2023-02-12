@@ -8,6 +8,9 @@ const authenticate=require("../authenticate/authenticate.js")
 router.get("/", (req, res) => {
     res.send("hello form me")
 })
+// router.get("/apl", (req, res) => {
+//     res.send("hello form e")
+// })
 
 router.post("/register", async(req, res) => {
     const { name, email, phone, work, password, cpassword } = req.body;

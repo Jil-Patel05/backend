@@ -7,6 +7,9 @@ dotenv.config({ path: './config.env' })
 const port = process.env.PORT || 5000;
 require("./db/conn")
 const path = require("path");
+var cors = require('cors')
+
+app.use(cors())
 
 app.use(express.json());
 app.use(cookieParser())
