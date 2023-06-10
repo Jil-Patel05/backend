@@ -5,9 +5,9 @@ const bcrypt = require("bcryptjs");
 const authenticate=require("../authenticate/authenticate.js")
 
 //asnyc-await
-router.get("/", (req, res) => {
-    res.send("hello form me")
-})
+// router.get("/", (req, res) => {
+//     res.send("hello form me")
+// })
 // router.get("/apl", (req, res) => {
 //     res.send("hello form e")
 // })
